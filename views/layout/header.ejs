@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daily Journal</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <div class="navbar-header">
+                    <p class="navbar-brand">DAILY JOURNAL</p>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- 6 -->
+                    <li
+                        class="nav-item <%= (page === 'home') ? 'active' : '' %>"
+                        id="home"
+                    >
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li
+                        class="nav-item <%= (page === 'about') ? 'active' : '' %>"
+                        id="about"
+                    >
+                        <a class="nav-link" href="/about">ABOUT US</a>
+                    </li>
+                    <li
+                        class="nav-item <%= (page === 'contact') ? 'active' : '' %>"
+                        id="contact"
+                    >
+                        <a class="nav-link" href="/contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
