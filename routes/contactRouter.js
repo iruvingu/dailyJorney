@@ -4,7 +4,7 @@ const { contactContent } = require("../utils/constants.js");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("contact", { page: "contact", description: contactContent });
+    res.render("contact", { page: "Contact", description: contactContent });
 });
 
 module.exports = {
