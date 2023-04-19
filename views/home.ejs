@@ -1,6 +1,19 @@
 <%- include('layout/header') %>
 <div class="page-container">
-    <h2>Home</h2>
+    <h2><%= page %></h2>
     <h5><%= description %></h5>
+    <a class="btn btn-primary" href="/compose" role="button">Create Post</a>
+    <% postsArr.forEach(post => { %>
+    <div class="post-item">
+        <h4><%= post.title %></h4>
+        <p>
+            <%= post.content.slice(0, 100) %><span
+                ><a class="btn btn-link" href="/<%= post.id %>" role="button"
+                    >...Read More</a
+                ></span
+            >
+        </p>
+    </div>
+    <% }) %>
 </div>
 <%- include('layout/footer') %>
